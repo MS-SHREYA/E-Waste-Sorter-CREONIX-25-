@@ -2,21 +2,24 @@
 
 **Developed for the CREONIX '25 National Level Hackathon.**
 
-E-Waste PCB Analyzer & Sorter is a vision-based AI system designed to intelligently sort and classify scrap Printed Circuit Boards (PCBs) to make e-waste recycling more efficient, profitable, and sustainable. [cite_start]The system analyzes an image of a PCB and provides a detailed breakdown of its components, reusability potential, and a final segregation recommendation. [cite: 2]
+E-Waste PCB Analyzer & Sorter is a vision-based AI system designed to intelligently sort and classify scrap Printed Circuit Boards (PCBs) to make e-waste recycling more efficient, profitable, and sustainable. [cite_start]The system analyzes an image of a PCB and provides a detailed breakdown of its components, reusability potential, and a final segregation recommendation. 
 
-![Demo Screenshot](link_to_your_demo_screenshot.png)  
-*(You should replace this line with a real screenshot of your Gradio app working)*
+<img width="1366" height="638" alt="image" src="https://github.com/user-attachments/assets/f4692a02-4398-49eb-b33e-46ab3dc5f75f" />
+<img width="1366" height="640" alt="image" src="https://github.com/user-attachments/assets/6066d4c6-077f-49a2-b86b-c3cfe85a0357" />
+
+
+
 
 ---
 
 ## 🚀 Key Features
 
-* [cite_start]**Real-Time Component Detection:** Utilizes a custom-trained YOLOv8 model to detect and locate multiple electronic components (ICs, capacitors, etc.) on any given PCB image. [cite: 26]
+* **Real-Time Component Detection:** Utilizes a custom-trained YOLOv8 model to detect and locate multiple electronic components (ICs, capacitors, etc.) on any given PCB image.
 * **Detailed Reusability Analysis:** Calculates a "Reusability Score" based on the quality, quantity, and density of valuable components, and provides a transparent list of the factors considered in its decision.
 * **Intelligent Segregation Recommendation:** Provides an instant, actionable recommendation to classify a board for its most efficient waste stream:
     * ♻️ **Reusable:** High potential for component harvesting.
     * ☣️ **Hazardous:** Requires special handling and disposal.
-    * [cite_start]⚙️ **General Recycling:** Suitable for standard shredding and material recovery. [cite: 15]
+    * ⚙️ **General Recycling:** Suitable for standard shredding and material recovery. 
 
 ---
 
@@ -24,7 +27,7 @@ E-Waste PCB Analyzer & Sorter is a vision-based AI system designed to intelligen
 
 * **AI/ML Framework:** Python, Ultralytics YOLOv8, OpenCV, NumPy
 * **UI/Application Framework:** Gradio
-* [cite_start]**Dataset Management:** Roboflow [cite: 24]
+* **Dataset Management:** Roboflow
 * **Development Environment:** Google Colab
 
 ---
@@ -60,6 +63,6 @@ The project can be run using the provided Jupyter/Colab notebook (`SRMHack.ipynb
 
 While this prototype is fully functional, the system is designed for scalability. Future improvements could include:
 
-* [cite_start]**Integration with Robotics:** The final recommendation output can be used as a command signal for a physical robotic arm or conveyor system to automate the physical sorting process. [cite: 16]
-* [cite_start]**Expanded Dataset:** Training the model on a larger, more diverse dataset of PCBs will improve accuracy and the ability to recognize a wider variety of components, especially on damaged or corroded boards. [cite: 43, 44]
+* **Integration with Robotics:** The final recommendation output can be used as a command signal for a physical robotic arm or conveyor system to automate the physical sorting process.
+* **Expanded Dataset:** Training the model on a larger, more diverse dataset of PCBs will improve accuracy and the ability to recognize a wider variety of components, especially on damaged or corroded boards.
 * **Advanced Component Analysis:** Integrating OCR to read part numbers from ICs to enable precise value estimation and datasheet lookups.
